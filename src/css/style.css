@@ -5,7 +5,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%; /* Ensures the body takes full viewport height */
+  height: 100%; 
   width: 100%;
 }
 
@@ -30,9 +30,8 @@ html, body {
 
 .header .logo {
 	font: 700 20px "Source Sans Pro", sans-serif;
-	color: #fff; /* Adjust color as needed */
-	text-decoration: none; /* Removes the underline typically added to links */
-	/* Add other styles as needed */
+	color: #fff; 
+	text-decoration: none;
   }
   
 
@@ -82,23 +81,23 @@ html, body {
 }
 
 .primary-cta {
-  background-color: #08d833; /* Green background */
-  color: #ffffff; /* White text color */
-  padding: 20px 80px; /* Larger padding for a bigger button */
+  background-color: #08d833;
+  color: #ffffff;
+  padding: 20px 80px; 
   width: 450px;
-  text-decoration: none; /* Removes the underline from the link */
-  border-radius: 50px; /* Rounded corners for pill shape */
-  display: inline-block; /* Allows the use of text-align on the parent */
-  font-size: 30px; /* Larger font size for the button */
-  font-weight: bold; /* Bold text for the button */
+  text-decoration: none; 
+  border-radius: 50px; 
+  display: inline-block; 
+  font-size: 30px; 
+  font-weight: bold; 
   font-family: "Source Sans Pro", sans-serif;
-  margin-bottom: 20px; /* Space between the button and subheading */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  transition: background-color 0.2s ease-in-out; /* Smooth transition for hover effect */
+  margin-bottom: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.2s ease-in-out; 
 }
 
 .primary-cta:hover {
-  background-color: #0fa944; /* Lighter green on hover for feedback */
+  background-color: #0fa944; 
 }
 
 .hero-browse-text {
@@ -151,20 +150,20 @@ html, body {
 }
 
 .category-button {
-  background-color: #333; /* Initial dark background */
+  background-color: #333; 
   border: none;
-  border-radius: 25px; /* Rounded corners */
+  border-radius: 25px;
   padding: 10px 20px;
-  color: white; /* Text color */
-  font-size: 16px; /* Text size */
+  color: white; 
+  font-size: 16px; 
   text-align: center;
-  cursor: pointer; /* Mouse cursor on hover */
-  transition: background-color 0.3s; /* Smooth background transition */
-  margin: 5px; /* Space between buttons */
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+  margin: 5px; 
 }
 
 .category-button.active {
-  background-color: #08d833; /* Green background when active */
+  background-color: #08d833; 
 }
 
 .category-button img {
@@ -177,47 +176,47 @@ html, body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top: 20px; /* Adjusted top margin */
+  margin-top: 20px; 
 }
 
 .categories-heading {
-  text-align: center; /* Center align the heading */
-  color: #fff; /* White text color */
-  font-size: 24px; /* Increased text size */
-  margin-top: 30px; /* Space before the heading */
-  margin-bottom: 20px; /* Space after the heading */
+  text-align: center; 
+  color: #fff; 
+  font-size: 24px; 
+  margin-top: 30px; 
+  margin-bottom: 20px; 
   font-family: "Source Sans Pro", sans-serif;
 }
 
 .category-button:hover:not(.active) {
-  background-color: #555; /* Slightly lighter background on hover */
+  background-color: #555; 
 }
 
 .search-button-container {
   display: flex;
-  justify-content: center; /* Center the button horizontally */
-  margin-top: 30px; /* Space before the button */
+  justify-content: center; 
+  margin-top: 30px;
 }
 
 .search-button {
-  background-color: #08d833; /* Green background */
-  color: #fff; /* White text */
-  text-decoration: none; /* Remove underline from links */
-  padding: 15px 70px; /* Padding inside the button */
-  border-radius: 30px; /* Rounded corners */
-  font-size: 15px; /* Text size */
-  font-weight: bold; /* Bold text */
-  transition: background-color 0.3s, transform 0.1s; /* Smooth color transition and click effect */
-  cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+  background-color: #08d833;
+  color: #fff; 
+  text-decoration: none; 
+  padding: 15px 70px; 
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold; 
+  transition: background-color 0.3s, transform 0.1s;
+  cursor: pointer; 
   font-family: "Source Sans Pro", sans-serif;
 }
 
 .search-button:hover {
-  background-color: #0fa944; /* Slightly lighter green on hover */
+  background-color: #0fa944;
 }
 
 .search-button:active {
-  transform: scale(0.98); /* Slightly scale down the button when clicked */
+  transform: scale(0.98); 
 }
 
 .modal-overlay {
@@ -226,11 +225,11 @@ html, body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(0, 0, 0, 0.7); /* Dark overlay with opacity */
+	background: rgba(0, 0, 0, 0.7);
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 0.3s, visibility 0.3s;
-	z-index: 1000; /* High z-index to be on top of other elements */
+	z-index: 1000;
   }
   
   
@@ -255,7 +254,6 @@ html, body {
 	cursor: pointer;
   }
   
-  /* Visible state for the modal and overlay */
   .modal.active,
   .modal-overlay.active {
 	visibility: visible;
@@ -278,14 +276,14 @@ html, body {
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.08);
 	display: flex;
 	margin-top: 49px;
-	width: calc(100% + 110px); /* Extend width to account for parent's padding */
-	margin-left: -55px; /* Offset the left padding of the parent */
-	margin-right: -55px; /* NEW: Offset the right padding of the parent */
+	width: calc(100% + 110px); 
+	margin-left: -55px; 
+	margin-right: -55px; 
 	flex-direction: column;
 	align-items: start;
 	font-size: 12px;
 	font-weight: 400;
-	padding: 45px; /* Adjusted padding for footer content */
+	padding: 45px; 
   }
   
 
