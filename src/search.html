@@ -7,61 +7,74 @@
 <link rel="stylesheet" href="css/search-style.css">
 </head>
 <body>
-    <section class="search-container">
-        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/da73b9f8144fa54fe3a7c3d07f6a518dde775e93b4c98559523a9f865e1e6150?apiKey=2bc18b0660b3440581b59db6e768706e&" alt="" class="search-container__background" />
-        <h2 class="search-title">Search</h2>
-        <h3 class="category-label">Sound category</h3>
-        <div class="slider-container">
-          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1794444c2c44067a1bc640586808566421d6d69cd6aeb991a9c9106058152744?apiKey=2bc18b0660b3440581b59db6e768706e&" alt="" />
-          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/195f37db2c948ae1f2f94bb6a985a511ef09bf8f4f34b8778fc6877f8e826cde?apiKey=2bc18b0660b3440581b59db6e768706e&" alt="" class="slider-thumb" />
-        </div>
-        <div class="duration-labels">
-          <label for="min-duration" class="min-duration-label">Min. duration</label>
-          <label for="max-duration" class="max-duration-label">Max. duration</label>
-        </div>
-        <div class="duration-inputs">
-          <div class="min-duration-input">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/40e9bf023dea53cb9abeaa2c062638945a2847e53ca90d7448ab7e5c58afd136?apiKey=2bc18b0660b3440581b59db6e768706e&" alt="" />
-            <input type="text" id="min-duration" value="0:15" aria-label="Minimum duration" />
-          </div>
-          <div class="max-duration-input">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bf0e98527ee33d6c5fb06769e5e3998d1e4244a3251538506cb7bc2dcd1d50ee?apiKey=2bc18b0660b3440581b59db6e768706e&" alt="" />
-            <input type="text" id="max-duration" value="1:30" aria-label="Maximum duration" />
-          </div>
-        </div>
-        <h3 class="format-label">Format type</h3>
-        <div class="format-options">
-          <div class="format-options__row">
-            <div class="format-option format-option--selected">
-              <button class="format-option__button">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/428444b9a048f8b7878ab32869fa8935ae86efb70a01985e7fde8ce7d0da390b?apiKey=2bc18b0660b3440581b59db6e768706e&" alt="" />
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/63d7ce11dfcfc42456765229c45f532dba81e0e1cb6ec245bd5162f99cf7116b?apiKey=2bc18b0660b3440581b59db6e768706e&" alt="" class="format-option__icon" />
-                <span class="format-option__label">Ambient</span>
-              </button>
-            </div>
-            <div class="format-option format-option--nature">
-              <button class="format-option__button">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f851b4a6843b5e7c48fa31740dbd2954e0edb6ecfe6b7a8a632838e6b9327618?apiKey=2bc18b0660b3440581b59db6e768706e&" alt="" />
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7199e269b06075ffd53de4f198d84d82e18c568538edbf4b49245a36dc34a0b7?apiKey=2bc18b0660b3440581b59db6e768706e&" alt="" class="format-option__icon" />
-                <span class="format-option__label">Nature</span>
-              </button>
-            </div>
-            <div class="format-option format-option--technology">
-              <button class="format-option__button">
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5237035e7d7e97a4f99e05b4d61e4dd8739ea8bbdb1bc28ed46fd824f3f3071?apiKey=2bc18b0660b3440581b59db6e768706e&" alt="" />
-                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b9b52f07b5687b37b7cbc0dcfbb54d50cefefcb70ee6f585644e69d709ba3a2?apiKey=2bc18b0660b3440581b59db6e768706e&" alt="" class="format-option__icon" />
-                <span class="format-option__label">Technology</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="search-actions">
-          <button class="clear-search-button">Clear search</button>
-          <button class="search-button">
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bad2e500af45846b0e3c78c89c7853594e61cb00ba663f8ace40d171a13a0794?apiKey=2bc18b0660b3440581b59db6e768706e&" alt="" />
-            Search
-          </button>
-        </div>
-      </section>
-    </body>
-    </html>
+    <div class="search-header">
+        <h1 class="search-title">Search</h1>
+        <h2 class="category-title">Sound category</h2>
+        <div class="divider"></div>
+      </div>      
+<div class="category-grid">
+  <!-- Category Card 1 -->
+  <button class="category-card" onclick="toggleActive(this)">
+    <img src="icon-ambient.png" alt="Ambient Icon" class="category-card__icon">
+    <span class="category-card__title">Ambient</span>
+  </button>
+  
+  <!-- Category Card 2 -->
+  <button class="category-card" onclick="toggleActive(this)">
+    <img src="icon-nature.png" alt="Nature Icon" class="category-card__icon">
+    <span class="category-card__title">Nature</span>
+  </button>
+  
+  <!-- Category Card 3 -->
+  <button class="category-card" onclick="toggleActive(this)">
+    <img src="icon-technology.png" alt="Technology Icon" class="category-card__icon">
+    <span class="category-card__title">Technology</span>
+  </button>
+  
+  <!-- Category Card 4 -->
+  <button class="category-card" onclick="toggleActive(this)">
+    <img src="icon-weapon.png" alt="Weapon Icon" class="category-card__icon">
+    <span class="category-card__title">Weapon</span>
+  </button>
+  
+  <!-- Category Card 5 -->
+  <button class="category-card" onclick="toggleActive(this)">
+    <img src="icon-music.png" alt="Music Icon" class="category-card__icon">
+    <span class="category-card__title">Music</span>
+  </button>
+  
+  <!-- Category Card 6 -->
+  <button class="category-card" onclick="toggleActive(this)">
+    <img src="icon-sci-fi.png" alt="Sci-Fi Icon" class="category-card__icon">
+    <span class="category-card__title">Sci-Fi</span>
+  </button>
+  
+  <!-- Category Card 7 -->
+  <button class="category-card" onclick="toggleActive(this)">
+    <img src="icon-animals.png" alt="Animals Icon" class="category-card__icon">
+    <span class="category-card__title">Animals</span>
+  </button>
+  
+  <!-- Category Card 8 -->
+  <button class="category-card" onclick="toggleActive(this)">
+    <img src="icon-urban.png" alt="Urban Icon" class="category-card__icon">
+    <span class="category-card__title">Urban</span>
+  </button>
+  
+  <!-- Category Card 9 -->
+  <button class="category-card" onclick="toggleActive(this)">
+    <img src="icon-sports.png" alt="Sports Icon" class="category-card__icon">
+    <span class="category-card__title">Sports</span>
+  </button>
+</div>
+
+<div class="search-footer">
+    <button class="clear-search" onclick="clearSelections()">Clear search</button>
+    <a href="path-to-search-page.html" class="search-button">Search</a>
+  </div>
+  
+<script src="./js/search-scripts.js"></script>
+
+
+</body>
+</html>
