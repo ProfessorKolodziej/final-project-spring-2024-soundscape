@@ -1,0 +1,91 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Layout */
+  .sidebar {
+    background-color: #000; /* Or your chosen sidebar color */
+    color: white;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+  }
+  
+  .main-content {
+    margin-left: 250px; /* Same as sidebar width */
+    padding: 20px;
+    color: white;
+    background-color: #121212; /* Or your chosen main content color */
+  }
+  
+  /* Header Styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  input[type="search"] {
+    /* Style your search input */
+  }
+  
+  /* Content Styles */
+  .content h1 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .content p {
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    /* Style your control icons */
+  }
+  
+  /* Tracklist Styles */
+  .tracklist {
+    margin-top: 20px;
+  }
+  
+  .track {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #333; /* Or your chosen track background color */
+  }
+  
+  .track h3 {
+    color: white;
+  }
+  
+  .track span {
+    color: grey;
+  }
+  
+  .track button {
+    /* Style your play button */
+  }
+  
+  /* Footer Styles */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 250px); /* Take into account the sidebar */
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

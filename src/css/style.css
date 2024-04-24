@@ -1,121 +1,304 @@
-
 * {
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
   }
-  
-  body {
-	font-family: 'Arial', sans-serif;
-	background-color: #1a1a1a; 
-	color: white;
-	line-height: 1.6;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensures the body takes full viewport height */
+  width: 100%;
+}
+
+.soundscape-container {
+  background-color: #161616;
+  display: flex;
+  padding: 46px 55px 0;
+  flex-direction: column;
+  color: #fff;
+}
+
+.header {
+  align-self: start;
+  display: flex;
+  width: 319px;
+  max-width: 100%;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.header .logo {
+	font: 700 20px "Source Sans Pro", sans-serif;
+	color: #fff; /* Adjust color as needed */
+	text-decoration: none; /* Removes the underline typically added to links */
+	/* Add other styles as needed */
   }
   
-  header {
-	background: #333;
-	padding: 10px 0;
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  align-self: stretch;
+  position: relative;
+  min-height: 1051px;
+  margin-top: 30px;
+  width: 100%;
+  padding: 80px 50px 36px;
+}
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px;
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  margin-top: 29px;
+  align-items: flex-start;
+  gap: 20px;
+  font-size: 48px;
+  font-weight: 700;
+  justify-content: space-between;
+}
+
+.hero-text {
+  align-self: end;
+  display: flex;
+  margin-top: 60px;
+  flex-direction: column;
+}
+
+.hero-heading {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.primary-cta {
+  background-color: #08d833; /* Green background */
+  color: #ffffff; /* White text color */
+  padding: 20px 80px; /* Larger padding for a bigger button */
+  width: 450px;
+  text-decoration: none; /* Removes the underline from the link */
+  border-radius: 50px; /* Rounded corners for pill shape */
+  display: inline-block; /* Allows the use of text-align on the parent */
+  font-size: 30px; /* Larger font size for the button */
+  font-weight: bold; /* Bold text for the button */
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 20px; /* Space between the button and subheading */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.primary-cta:hover {
+  background-color: #0fa944; /* Lighter green on hover for feedback */
+}
+
+.hero-browse-text {
+  margin-top: 122px;
+  font: 24px "Source Sans Pro", sans-serif;
+}
+
+.hero-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 100%;
+  align-self: start;
+}
+
+.categories-section {
+  position: relative;
+  display: flex;
+  margin-top: 38px;
+  gap: 20px;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.category-image {
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 100%;
+}
+
+.category-title {
+  margin-top: 21px;
+  font: 700 20px "Source Sans Pro", sans-serif;
+}
+
+.category-description {
+  margin-top: 12px;
+  font: 400 16px "Source Sans Pro", sans-serif;
+}
+
+.categories-divider {
+  object-fit: contain;
+  width: 100%;
+  fill: #3a3a3a;
+  margin-top: 32px;
+  max-width: 1276px;
+}
+
+.category-button {
+  background-color: #333; /* Initial dark background */
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  padding: 10px 20px;
+  color: white; /* Text color */
+  font-size: 16px; /* Text size */
+  text-align: center;
+  cursor: pointer; /* Mouse cursor on hover */
+  transition: background-color 0.3s; /* Smooth background transition */
+  margin: 5px; /* Space between buttons */
+}
+
+.category-button.active {
+  background-color: #08d833; /* Green background when active */
+}
+
+.category-button img {
+  display: none;
+}
+
+.categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px; /* Adjusted top margin */
+}
+
+.categories-heading {
+  text-align: center; /* Center align the heading */
+  color: #fff; /* White text color */
+  font-size: 24px; /* Increased text size */
+  margin-top: 30px; /* Space before the heading */
+  margin-bottom: 20px; /* Space after the heading */
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.category-button:hover:not(.active) {
+  background-color: #555; /* Slightly lighter background on hover */
+}
+
+.search-button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 30px; /* Space before the button */
+}
+
+.search-button {
+  background-color: #08d833; /* Green background */
+  color: #fff; /* White text */
+  text-decoration: none; /* Remove underline from links */
+  padding: 15px 70px; /* Padding inside the button */
+  border-radius: 30px; /* Rounded corners */
+  font-size: 15px; /* Text size */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s, transform 0.1s; /* Smooth color transition and click effect */
+  cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.search-button:hover {
+  background-color: #0fa944; /* Slightly lighter green on hover */
+}
+
+.search-button:active {
+  transform: scale(0.98); /* Slightly scale down the button when clicked */
+}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7); /* Dark overlay with opacity */
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s, visibility 0.3s;
+	z-index: 1000; /* High z-index to be on top of other elements */
   }
   
-  nav ul {
-	list-style: none;
-	display: flex;
-	justify-content: center;
-  }
   
-  nav ul li {
-	margin: 0 10px;
-  }
-  
-  nav ul li a {
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-  }
-  
-  /* Hero section */
-  .hero {
-	background-color: #262626; 
-	text-align: center;
-	padding: 50px 20px;
-  }
-  
-  .hero h1 {
-	margin-bottom: 20px;
-	font-size: 2em;
-  }
-  
-  .btn {
-	display: inline-block;
-	background-color: #4CAF50; 
-	color: white;
-	padding: 10px 25px;
-	text-decoration: none;
-	border-radius: 5px;
-	transition: background-color 0.3s;
-  }
-  
-  .btn:hover {
-	background-color: #45a049;
-  }
-  
-  /* Categories section */
-  .categories article {
-	background-color: #202020; 
-	margin: 20px;
+  .modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.7);
+	background-color: #fff;
 	padding: 20px;
 	border-radius: 10px;
-	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 2;
+	transition: opacity 0.3s, transform 0.3s;
   }
   
-  .categories img {
-	width: 100%;
-	height: auto;
-	border-radius: 10px;
-	margin-bottom: 15px;
-  }
-  
-  /* Search Section */
-  .search {
-	background-color: #262626; 
-	text-align: center;
-	padding: 50px 20px;
-  }
-  
-  .search h2 {
-	margin-bottom: 20px;
-  }
-  
-  .search button {
-	background: none;
-	border: 1px solid #4CAF50;
-	color: #4CAF50;
-	padding: 10px 20px;
-	margin: 5px;
-	border-radius: 5px;
+  .close {
+	position: absolute;
+	top: 10px;
+	right: 20px;
 	cursor: pointer;
-	transition: background-color 0.3s, color 0.3s;
   }
   
-  .search button:hover {
-	background-color: #4CAF50;
-	color: white;
+  /* Visible state for the modal and overlay */
+  .modal.active,
+  .modal-overlay.active {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(-50%, -50%) scale(1);
   }
   
-  /* Footer */
-  footer {
-	background: #333;
-	color: white;
-	text-align: center;
-	padding: 20px 0;
+
+.footer-divider {
+  object-fit: contain;
+  width: 100%;
+  fill: #3a3a3a;
+  align-self: center;
+  margin-top: 8px;
+  max-width: 1276px;
+}
+
+.footer {
+	background-color: #282828;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.08);
+	display: flex;
+	margin-top: 49px;
+	width: calc(100% + 110px); /* Extend width to account for parent's padding */
+	margin-left: -55px; /* Offset the left padding of the parent */
+	margin-right: -55px; /* NEW: Offset the right padding of the parent */
+	flex-direction: column;
+	align-items: start;
+	font-size: 12px;
+	font-weight: 400;
+	padding: 45px; /* Adjusted padding for footer content */
   }
   
-  @media (max-width: 768px) {
-	nav ul {
-	  flex-direction: column;
-	}
-	nav ul li {
-	  margin: 10px 0;
-	}
-  }
-  
+
+.footer-logo {
+  font: 20px "Source Sans Pro", sans-serif;
+}
+
+.footer-description {
+  font-family: "Source Sans Pro", sans-serif;
+  margin-top: 11px;
+}
+
+.footer-copyright {
+  font-family: "Source Sans Pro", sans-serif;
+  margin-top: 52px;
+}
