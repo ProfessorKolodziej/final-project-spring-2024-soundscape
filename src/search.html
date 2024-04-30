@@ -11,70 +11,41 @@
         <h1 class="search-title">Search</h1>
         <h2 class="category-title">Sound category</h2>
         <div class="divider"></div>
-      </div>      
-<div class="category-grid">
-  <!-- Category Card 1 -->
-  <button class="category-card" onclick="toggleActive(this)">
-    <img src="icon-ambient.png" alt="Ambient Icon" class="category-card__icon">
-    <span class="category-card__title">Ambient</span>
-  </button>
-  
-  <!-- Category Card 2 -->
-  <button class="category-card" onclick="toggleActive(this)">
-    <img src="icon-nature.png" alt="Nature Icon" class="category-card__icon">
-    <span class="category-card__title">Nature</span>
-  </button>
-  
-  <!-- Category Card 3 -->
-  <button class="category-card" onclick="toggleActive(this)">
-    <img src="icon-technology.png" alt="Technology Icon" class="category-card__icon">
-    <span class="category-card__title">Technology</span>
-  </button>
-  
-  <!-- Category Card 4 -->
-  <button class="category-card" onclick="toggleActive(this)">
-    <img src="icon-weapon.png" alt="Weapon Icon" class="category-card__icon">
-    <span class="category-card__title">Weapon</span>
-  </button>
-  
-  <!-- Category Card 5 -->
-  <button class="category-card" onclick="toggleActive(this)">
-    <img src="icon-music.png" alt="Music Icon" class="category-card__icon">
-    <span class="category-card__title">Music</span>
-  </button>
-  
-  <!-- Category Card 6 -->
-  <button class="category-card" onclick="toggleActive(this)">
-    <img src="icon-sci-fi.png" alt="Sci-Fi Icon" class="category-card__icon">
-    <span class="category-card__title">Sci-Fi</span>
-  </button>
-  
-  <!-- Category Card 7 -->
-  <button class="category-card" onclick="toggleActive(this)">
-    <img src="icon-animals.png" alt="Animals Icon" class="category-card__icon">
-    <span class="category-card__title">Animals</span>
-  </button>
-  
-  <!-- Category Card 8 -->
-  <button class="category-card" onclick="toggleActive(this)">
-    <img src="icon-urban.png" alt="Urban Icon" class="category-card__icon">
-    <span class="category-card__title">Urban</span>
-  </button>
-  
-  <!-- Category Card 9 -->
-  <button class="category-card" onclick="toggleActive(this)">
-    <img src="icon-sports.png" alt="Sports Icon" class="category-card__icon">
-    <span class="category-card__title">Sports</span>
-  </button>
-</div>
-
-<div class="search-footer">
-    <button class="clear-search" onclick="clearSelections()">Clear search</button>
-    <a href="path-to-search-page.html" class="search-button">Search</a>
-  </div>
-  
-<script src="./js/search-scripts.js"></script>
-
-
+    </div>
+    <div class="category-grid">
+      
+      <button class="category-card" onclick="toggleActive(this)" style="background-image: url('https://source.unsplash.com/featured/?ambient');">
+        <span class="category-card__title">Ambient</span>
+      </button>
+      <button class="category-card" onclick="toggleActive(this)" style="background-image: url('https://source.unsplash.com/featured/?nature');">
+        <span class="category-card__title">Nature</span>
+      </button>
+      <button class="category-card" onclick="toggleActive(this)" style="background-image: url('https://source.unsplash.com/featured/?technology');">
+        <span class="category-card__title">Technology</span>
+      </button>
+      <button class="category-card" onclick="toggleActive(this)" style="background-image: url('https://source.unsplash.com/featured/?weapon');">
+        <span class="category-card__title">Weapon</span>
+      </button>
+      <button class="category-card" onclick="toggleActive(this)" style="background-image: url('https://source.unsplash.com/featured/?music');">
+        <span class="category-card__title">Music</span>
+      </button>
+      <button class="category-card" onclick="toggleActive(this)" style="background-image: url('https://source.unsplash.com/featured/?scifi');">
+        <span class="category-card__title">Sci-Fi</span>
+      </button>
+      <button class="category-card" onclick="toggleActive(this)" style="background-image: url('https://source.unsplash.com/featured/?animals');">
+        <span class="category-card__title">Animals</span>
+      </button>
+      <button class="category-card" onclick="toggleActive(this)" style="background-image: url('https://source.unsplash.com/featured/?urban');">
+        <span class="category-card__title">Urban</span>
+      </button>
+      <button class="category-card" onclick="toggleActive(this)" style="background-image: url('https://source.unsplash.com/featured/?sports');">
+        <span class="category-card__title">Sports</span>
+      </button>
+    </div>
+    <div class="search-footer">
+        <button class="clear-search" onclick="clearSelections()">Clear search</button>
+        <a href="result.html" class="search-button">Search</a>
+    </div>
+    <script src="./js/search-scripts.js"></script>
 </body>
 </html>

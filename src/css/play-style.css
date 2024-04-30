@@ -1,91 +1,482 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.div {
+  background-color: rgba(22, 22, 22, 1);
+  display: flex;
+  padding-top: 25px;
+  flex-direction: column;
+}
+.div-2 {
+  background-color: rgba(22, 22, 22, 1);
+  align-self: center;
+  display: flex;
+  width: 100%;
+  max-width: 1147px;
+  flex-direction: column;
+  align-items: end;
+}
+@media (max-width: 991px) {
+  .div-2 {
+    max-width: 100%;
   }
-  
-  body, html {
-    height: 100%;
-    font-family: 'Arial', sans-serif;
+}
+.div-3 {
+  align-self: stretch;
+}
+@media (max-width: 991px) {
+  .div-3 {
+    max-width: 100%;
   }
-  
-  /* Layout */
-  .sidebar {
-    background-color: #000; /* Or your chosen sidebar color */
-    color: white;
-    width: 250px;
-    height: 100%;
-    position: fixed;
+}
+.div-4 {
+  gap: 20px;
+  display: flex;
+}
+@media (max-width: 991px) {
+  .div-4 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0px;
   }
-  
-  .main-content {
-    margin-left: 250px; /* Same as sidebar width */
-    padding: 20px;
-    color: white;
-    background-color: #121212; /* Or your chosen main content color */
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 23%;
+  margin-left: 0px;
+}
+@media (max-width: 991px) {
+  .column {
+    width: 100%;
   }
-  
-  /* Header Styles */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
+}
+.div-5 {
+  disply: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  aspect-ratio: 1.56;
+  color: #fff;
+  font-weight: 700;
+  padding: 33px 22px;
+}
+@media (max-width: 991px) {
+  .div-5 {
+    margin-top: 25px;
+    padding: 0 20px;
   }
-  
-  input[type="search"] {
-    /* Style your search input */
+}
+.img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.div-6 {
+  position: relative;
+  align-self: start;
+  margin-left: 12px;
+  font: 20px Source Sans Pro, sans-serif;
+}
+@media (max-width: 991px) {
+  .div-6 {
+    margin-left: 10px;
   }
-  
-  /* Content Styles */
-  .content h1 {
-    color: white;
-    margin-bottom: 10px;
+}
+.div-7 {
+  disply: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  align-self: center;
+  display: flex;
+  aspect-ratio: 4.82;
+  margin-top: 41px;
+  gap: 12px;
+  font-size: 16px;
+  white-space: nowrap;
+  padding: 12px 12px 29px;
+}
+@media (max-width: 991px) {
+  .div-7 {
+    margin-top: 40px;
+    white-space: initial;
   }
-  
-  .content p {
-    margin-bottom: 20px;
+}
+.img-2 {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 21px;
+}
+.div-8 {
+  position: relative;
+  font-family: Source Sans Pro, sans-serif;
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: auto 81px auto 17px;
+}
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 77%;
+  margin-left: 20px;
+}
+@media (max-width: 991px) {
+  .column-2 {
+    width: 100%;
   }
-  
-  .controls {
-    /* Style your control icons */
+}
+.div-9 {
+  display: flex;
+  margin-top: 4px;
+  flex-grow: 1;
+  flex-direction: column;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+}
+@media (max-width: 991px) {
+  .div-9 {
+    max-width: 100%;
+    margin-top: 29px;
   }
-  
-  /* Tracklist Styles */
-  .tracklist {
-    margin-top: 20px;
+}
+.div-10 {
+  align-self: start;
+  display: flex;
+  margin-top: 25px;
+  gap: 4px;
+  font-size: 14px;
+}
+.img-3 {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 25px;
+}
+.div-11 {
+  font-family: Source Sans Pro, sans-serif;
+  margin: auto 0;
+}
+.div-12 {
+  font-family: Source Sans Pro, sans-serif;
+  margin-top: 29px;
+}
+@media (max-width: 991px) {
+  .div-12 {
+    max-width: 100%;
   }
-  
-  .track {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #333; /* Or your chosen track background color */
+}
+.div-13 {
+  margin-top: 41px;
+  font: 700 42px Source Sans Pro, sans-serif;
+}
+@media (max-width: 991px) {
+  .div-13 {
+    max-width: 100%;
+    margin-top: 40px;
   }
-  
-  .track h3 {
-    color: white;
+}
+.div-14 {
+  color: #fff;
+  margin: 52px 108px 0 0;
+  font: 400 16px Source Sans Pro, sans-serif;
+}
+@media (max-width: 991px) {
+  .div-14 {
+    max-width: 100%;
+    margin: 40px 10px 0 0;
   }
-  
-  .track span {
-    color: grey;
+}
+.div-15 {
+  color: #fff;
+  align-self: center;
+  margin-top: 6px;
+  font: 400 16px Source Sans Pro, sans-serif;
+}
+.div-16 {
+  align-self: start;
+  display: flex;
+  gap: 8px;
+  margin: 70px 0 0 286px;
+}
+@media (max-width: 991px) {
+  .div-16 {
+    margin: 40px 0 0 10px;
   }
-  
-  .track button {
-    /* Style your play button */
+}
+.img-4 {
+  aspect-ratio: 0.96;
+  object-fit: auto;
+  object-position: center;
+  width: 25px;
+}
+.img-5 {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 26px;
+}
+.img-6 {
+  aspect-ratio: 0.96;
+  object-fit: auto;
+  object-position: center;
+  width: 25px;
+}
+.img-7 {
+  aspect-ratio: 0.96;
+  object-fit: auto;
+  object-position: center;
+  width: 25px;
+}
+.div-17 {
+  color: #fff;
+  align-self: center;
+  margin-top: 48px;
+  font: 700 20px Source Sans Pro, sans-serif;
+}
+@media (max-width: 991px) {
+  .div-17 {
+    margin-top: 40px;
   }
-  
-  /* Footer Styles */
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: calc(100% - 250px); /* Take into account the sidebar */
-    background-color: #000;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+}
+.div-18 {
+  disply: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  min-height: 82px;
+  margin-top: 25px;
+  width: 100%;
+  gap: 20px;
+  color: #fff;
+  justify-content: space-between;
+  padding: 13px 14px;
+}
+@media (max-width: 991px) {
+  .div-18 {
+    max-width: 100%;
+    flex-wrap: wrap;
   }
-  
+}
+.div-19 {
+  position: relative;
+  display: flex;
+  gap: 13px;
+}
+.img-8 {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 57px;
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
+}
+.div-20 {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+.div-21 {
+  font: 700 16px Source Sans Pro, sans-serif;
+}
+.div-22 {
+  margin-top: 18px;
+  font: 400 14px Source Sans Pro, sans-serif;
+}
+.img-9 {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 42px;
+  margin: auto 0;
+}
+.div-23 {
+  disply: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  min-height: 82px;
+  margin-top: 12px;
+  width: 100%;
+  gap: 20px;
+  color: #fff;
+  justify-content: space-between;
+  padding: 13px 14px;
+}
+@media (max-width: 991px) {
+  .div-23 {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.div-24 {
+  position: relative;
+  display: flex;
+  gap: 13px;
+}
+.img-10 {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 57px;
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
+}
+.div-25 {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+.div-26 {
+  font: 700 16px Source Sans Pro, sans-serif;
+}
+.div-27 {
+  margin-top: 14px;
+  font: 400 14px Source Sans Pro, sans-serif;
+}
+.img-11 {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 42px;
+  margin: auto 0;
+}
+.div-28 {
+  disply: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  min-height: 82px;
+  margin-top: 14px;
+  width: 100%;
+  gap: 20px;
+  color: #fff;
+  justify-content: space-between;
+  padding: 13px 14px;
+}
+@media (max-width: 991px) {
+  .div-28 {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.div-29 {
+  position: relative;
+  display: flex;
+  gap: 13px;
+}
+.img-12 {
+  aspect-ratio: 1.02;
+  object-fit: auto;
+  object-position: center;
+  width: 57px;
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
+}
+.div-30 {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+.div-31 {
+  font: 700 16px Source Sans Pro, sans-serif;
+}
+.div-32 {
+  margin-top: 15px;
+  font: 400 14px Source Sans Pro, sans-serif;
+}
+.img-13 {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 42px;
+  margin: auto 0;
+}
+.div-33 {
+  disply: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  min-height: 82px;
+  margin-top: 12px;
+  width: 100%;
+  gap: 20px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  justify-content: space-between;
+  padding: 13px 14px;
+}
+@media (max-width: 991px) {
+  .div-33 {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.div-34 {
+  position: relative;
+  display: flex;
+  gap: 13px;
+}
+.img-14 {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 57px;
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.08));
+}
+.div-35 {
+  font-family: Source Sans Pro, sans-serif;
+  align-self: start;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+.img-15 {
+  aspect-ratio: 1;
+  object-fit: auto;
+  object-position: center;
+  width: 42px;
+  margin: auto 0;
+}
+.div-36 {
+  background-color: rgba(40, 40, 40, 1);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  display: flex;
+  margin-top: -48px;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400;
+  padding: 39px 66px;
+}
+@media (max-width: 991px) {
+  .div-36 {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+.div-37 {
+  font: 20px Source Sans Pro, sans-serif;
+}
+.div-38 {
+  font-family: Source Sans Pro, sans-serif;
+  margin-top: 11px;
+}
+.div-39 {
+  font-family: Source Sans Pro, sans-serif;
+  margin-top: 56px;
+}
+@media (max-width: 991px) {
+  .div-39 {
+    margin-top: 40px;
+  }
+}
