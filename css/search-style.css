@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #161616;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.search-header {
+  text-align: left;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.search-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.category-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.divider {
+  height: 4px;
+  background-color: #3a3a3a;
+  width: 100%;
+  margin: 0 auto 50px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-card {
+  background-color: #252525;
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+  overflow: hidden;
+  position: relative;
+  height: 150px; 
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.category-card:hover {
+background-color: #333; 
+}
+
+.category-card.active {
+background-color: #08d833; 
+background-color: rgba(8, 216, 51, 0.7);
+}
+
+.category-card__title {
+position: relative;
+z-index: 1;
+}
+
+.search-footer {
+display: flex;
+justify-content: space-between;
+width: 100%;
+max-width: 1200px;
+padding: 0 15px;
+}
+
+.clear-search,
+.search-button {
+background-color: #333;
+color: white;
+padding: 15px 30px;
+border: none;
+border-radius: 25px;
+font-size: 18px;
+cursor: pointer;
+transition: background-color 0.3s;
+margin: 50px;
+text-decoration: none;
+}
+
+.clear-search:hover,
+.search-button:hover {
+background-color: #0fa944;
+}
+
+.search-button {
+background-color: #08d833;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+.category-grid {
+grid-template-columns: 1fr;
+gap: 20px;
+}
+
+.search-footer {
+flex-direction: column;
+}
+
+.clear-search,
+.search-button {
+width: 100%;
+margin-bottom: 10px;
+}
+}
